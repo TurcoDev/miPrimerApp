@@ -1,11 +1,12 @@
-<router-outlet></router-outlet>
+<div class="container">
+  <div class="welcome">
+    <h1>Bienvenidos</h1>
+    <button (click)="alerta()">Saludar</button>
+  </div>
 
+  <!-- llamado al componente obteniendo el valor de la variable titleMain declarada en app.component.ts  -->
+  <app-titulo [title]=titleMain></app-titulo>
 
-<h1>Holaaaaa</h1>
-<button (click)="alerta()">Saludar</button>
-
-
-<app-titulo [title]=titleMain></app-titulo>
-
-<app-titulo title="Mi Titulo"></app-titulo>
-
+  <!-- titulo enviado como dato a traves de title (variable de entrada del componente titulo) -->
+  <app-titulo title="Titulo pasado directamente"></app-titulo>
+</div>
